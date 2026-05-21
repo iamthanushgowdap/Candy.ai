@@ -50,7 +50,7 @@ Summary:`;
 
         const res = await fetch(`${process.env.NEXT_PUBLIC_OLLAMA_URL || process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"}/api/generate`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "application/json", "Bypass-Tunnel-Reminder": "true", "ngrok-skip-browser-warning": "true" },
           body: JSON.stringify({
             model: "qwen2.5:0.5b", // Standard small model for summarization tasks
             prompt: prompt,

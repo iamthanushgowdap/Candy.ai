@@ -11,7 +11,7 @@ export async function getWeather(location: string): Promise<string> {
 
   try {
     // Query wttr.in with the custom format containing condition text, temperature, humidity, wind speed, and precipitation
-    const res = await fetch(`https://wttr.in/${encodedLocation}?format=%C|%t|%h|%w|%p`, {
+    const res = await fetch(`https://wttr.in/${encodedLocation}?format=%C|%t|%h|%w|%p`, { headers: { "Bypass-Tunnel-Reminder": "true", "ngrok-skip-browser-warning": "true" },
       signal: AbortSignal.timeout(4000) // Keep orchestrator fast
     });
     
