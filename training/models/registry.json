@@ -1,0 +1,26 @@
+{
+  "activeModel": "qwen2.5:0.5b",
+  "models": {
+    "qwen2.5:0.5b": {
+      "id": "qwen2.5:0.5b",
+      "name": "Qwen 2.5 (0.5B)",
+      "path": "qwen2.5:0.5b",
+      "status": "deployed",
+      "trained_at": "2026-05-18T16:38:00.000Z",
+      "metrics": {
+        "accuracy": 7.0,
+        "quality": 7.0,
+        "reasoning": 6.5,
+        "latency_ms": 500
+      }
+    }
+  },
+  "history": [
+    {
+      "event": "deployed",
+      "modelId": "qwen2.5:0.5b",
+      "timestamp": "2026-05-18T16:38:00.000Z",
+      "notes": "Initial base model deployment"
+    }
+  ]
+}

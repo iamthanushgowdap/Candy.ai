@@ -1,0 +1,33 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm having a momentary issue processing your request. Please try again — I'm fully operational otherwise."
+    },
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm having a momentary issue processing your request. Please try again — I'm fully operational otherwise."
+    }
+  ],
+  "_meta": {
+    "session_id": "36992763-8ef6-4404-a0e5-75de2e4bc5f6",
+    "session_title": "New Conversation",
+    "exported_at": "2026-05-21T13:57:03.891Z",
+    "is_correction": false,
+    "correction_notes": [],
+    "label": "export",
+    "message_count": 5
+  }
+}

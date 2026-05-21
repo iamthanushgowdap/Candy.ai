@@ -1,0 +1,21 @@
+{
+  "version": "antgravity-v7",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "trained_at": "2026-05-21T17:20:00.487140",
+  "smoke_test": true,
+  "lora_config": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "targets": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "train_samples": 200,
+  "max_token_length": 256,
+  "train_duration_minutes": 5.8,
+  "log_path": "training/logs\\training_antgravity-v7_20260521_171231.jsonl"
+}

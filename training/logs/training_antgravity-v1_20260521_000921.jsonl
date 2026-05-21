@@ -1,0 +1,14 @@
+{"timestamp": "2026-05-21T00:09:21.089579", "event": "training_start", "version": "antgravity-v1", "base_model": "Qwen/Qwen2.5-3B-Instruct", "smoke_test": true, "max_token_length": 256, "lora_r": 8, "lora_alpha": 16}
+{"timestamp": "2026-05-21T00:10:08.641365", "event": "model_loaded", "vram_reserved_gb": 1.98, "vram_free_gb": 2.019}
+{"timestamp": "2026-05-21T00:10:10.511280", "event": "lora_attached", "total_params": 1702359040, "trainable_params": 3686400, "trainable_pct": 0.2165, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"]}
+{"timestamp": "2026-05-21T00:10:10.958560", "event": "training_begin", "vram": {"allocated_gb": 2.518, "reserved_gb": 3.152, "total_gb": 4.0, "free_gb": 0.847}, "smoke_test": true}
+{"timestamp": "2026-05-21T00:16:08.320037", "event": "step", "step": 5, "epoch": 0.16, "loss": 2.645554542541504, "learning_rate": 9.397368756032445e-05, "vram_allocated_gb": 2.544, "vram_reserved_gb": 3.771, "elapsed_seconds": 357.5, "samples_per_second": null}
+{"timestamp": "2026-05-21T00:23:03.509791", "event": "step", "step": 10, "epoch": 0.32, "loss": 2.0910953521728515, "learning_rate": 6.227427435703997e-05, "vram_allocated_gb": 2.544, "vram_reserved_gb": 3.771, "elapsed_seconds": 772.7, "samples_per_second": null}
+{"timestamp": "2026-05-21T00:28:48.359063", "event": "step", "step": 15, "epoch": 0.48, "loss": 1.668685531616211, "learning_rate": 2.2652592093878666e-05, "vram_allocated_gb": 2.544, "vram_reserved_gb": 3.771, "elapsed_seconds": 1117.5, "samples_per_second": null}
+{"timestamp": "2026-05-21T00:34:22.011716", "event": "step", "step": 20, "epoch": 0.64, "loss": 1.6452455520629883, "learning_rate": 6.819348298638839e-07, "vram_allocated_gb": 2.544, "vram_reserved_gb": 3.771, "elapsed_seconds": 1451.2, "samples_per_second": null}
+{"timestamp": "2026-05-21T00:35:08.690781", "event": "step", "step": 20, "epoch": 0.64, "loss": null, "learning_rate": null, "vram_allocated_gb": 2.544, "vram_reserved_gb": 3.771, "elapsed_seconds": 1497.9, "samples_per_second": null}
+{"timestamp": "2026-05-21T00:35:10.098497", "event": "checkpoint_saved", "step": 20, "output_dir": "training/checkpoints\\antgravity-v1"}
+{"timestamp": "2026-05-21T00:35:10.099010", "event": "epoch_end", "epoch": 0.64, "step": 20, "vram_reserved_gb": 3.771}
+{"timestamp": "2026-05-21T00:35:10.100024", "event": "step", "step": 20, "epoch": 0.64, "loss": null, "learning_rate": null, "vram_allocated_gb": 2.544, "vram_reserved_gb": 3.771, "elapsed_seconds": 1499.3, "samples_per_second": 0.214}
+{"timestamp": "2026-05-21T00:35:10.101034", "event": "training_complete", "duration_seconds": 1499.1, "train_loss": 2.0126452445983887, "steps": 20}
+{"timestamp": "2026-05-21T00:35:11.032680", "event": "adapter_saved", "adapter_dir": "training/outputs\\antgravity-v1", "version": "antgravity-v1"}

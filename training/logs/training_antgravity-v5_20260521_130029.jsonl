@@ -1,0 +1,5 @@
+{"timestamp": "2026-05-21T13:00:29.006032", "event": "training_start", "version": "antgravity-v5", "base_model": "Qwen/Qwen2.5-3B-Instruct", "smoke_test": false, "max_token_length": 256, "lora_r": 8, "lora_alpha": 16}
+{"timestamp": "2026-05-21T13:02:12.838702", "event": "model_loaded", "vram_reserved_gb": 1.98, "vram_free_gb": 2.019}
+{"timestamp": "2026-05-21T13:02:15.095503", "event": "lora_attached", "total_params": 1702359040, "trainable_params": 3686400, "trainable_pct": 0.2165, "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"]}
+{"timestamp": "2026-05-21T13:02:16.001142", "event": "training_begin", "vram": {"allocated_gb": 2.518, "reserved_gb": 3.152, "total_gb": 4.0, "free_gb": 0.847}, "smoke_test": false}
+{"timestamp": "2026-05-21T13:17:14.268924", "event": "step", "step": 20, "epoch": 0.0064, "loss": 2.6231361389160157, "learning_rate": 1.6000000000000003e-05, "vram_allocated_gb": 2.544, "vram_reserved_gb": 3.771, "elapsed_seconds": 898.8, "samples_per_second": null}

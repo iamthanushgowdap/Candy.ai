@@ -1,0 +1,17 @@
+[
+  {
+    "id": "job_1779383527351_xvvfjx5vy",
+    "versionName": "antgravity-v7",
+    "status": "completed",
+    "smokeTest": true,
+    "forceTrain": false,
+    "minSamples": 1,
+    "minQuality": 0.75,
+    "retries": 0,
+    "maxRetries": 3,
+    "createdAt": "2026-05-21T17:12:07.351Z",
+    "resumeFromCheckpoint": false,
+    "startedAt": "2026-05-21T17:12:07.356Z",
+    "completedAt": "2026-05-21T17:20:10.148Z"
+  }
+]
