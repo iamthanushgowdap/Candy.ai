@@ -20,7 +20,7 @@ export async function getEmbedding(text: string): Promise<number[]> {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 300); // 300ms timeout to avoid lag since Ollama runs in the cloud
 
-    const res = await fetch("http://127.0.0.1:11434/api/embeddings", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_OLLAMA_URL || process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"}/api/embeddings`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

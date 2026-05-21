@@ -160,7 +160,7 @@ export function routeRequest(
  */
 export async function getAvailableModels(): Promise<string[]> {
   try {
-    const res = await fetch("http://127.0.0.1:11434/api/tags", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_OLLAMA_URL || process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"}/api/tags`, {
       signal: AbortSignal.timeout(1200)
     });
     if (res.ok) {
@@ -180,7 +180,7 @@ export async function getAvailableModels(): Promise<string[]> {
  */
 export async function getActiveVramUsage(): Promise<{ usageBytes: number; loadedModels: string[] }> {
   try {
-    const res = await fetch("http://127.0.0.1:11434/api/ps", {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_OLLAMA_URL || process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"}/api/ps`, {
       signal: AbortSignal.timeout(1000)
     });
     if (res.ok) {

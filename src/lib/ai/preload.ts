@@ -29,7 +29,7 @@ export class PreloadManager {
       this.activePreloads.add(modelId);
 
       // Call Ollama empty generate with -1 keep_alive to load model
-      fetch("http://127.0.0.1:11434/api/generate", {
+      fetch(`${process.env.NEXT_PUBLIC_OLLAMA_URL || process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"}/api/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -58,7 +58,7 @@ export class PreloadManager {
   async unloadModel(modelId: string): Promise<boolean> {
     try {
       console.log(`[Preload] Releasing VRAM for model: ${modelId}`);
-      const res = await fetch("http://127.0.0.1:11434/api/generate", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_OLLAMA_URL || process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"}/api/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

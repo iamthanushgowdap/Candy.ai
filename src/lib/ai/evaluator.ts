@@ -81,7 +81,7 @@ async function generateOllamaResponse(modelId: string, system: string, prompt: s
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), 15000); // 15s timeout per generation
 
-      const res = await fetch("http://127.0.0.1:11434/api/generate", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_OLLAMA_URL || process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"}/api/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -134,7 +134,7 @@ JSON Output (matching exactly {"score_a": <float>, "score_b": <float>, "justific
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), 12000); // 12s timeout
 
-      const res = await fetch("http://127.0.0.1:11434/api/generate", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_OLLAMA_URL || process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434"}/api/generate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
